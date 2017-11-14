@@ -1,0 +1,12 @@
+<h1>Wiki-faker</h1>
+
+<ul>
+<% @articles.each do |article| %>
+  <li><strong><%= article.title %></strong> <br> <%= article.content %>
+  <br> <%= link_to 'Read more', article_path(article) %>
+  <%= link_to 'Edit', edit_article_path(article) %>
+  <%= link_to 'Delete', article_path(article), method: :delete %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'Add A New Article', new_article_path %>
