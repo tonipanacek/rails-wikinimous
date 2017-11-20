@@ -1,6 +1,6 @@
 <%= form_for @article do |f| %>
-Title: <%= f.text_field :title %>
+Title: <br> <%= f.text_field :title %>
 <br>
-Content: <%= f.text_field :content %>
+Content: <br> <%= f.text_area :content, rows: 20, cols: 100 %>
 <%= f.submit %>
 <% end %>

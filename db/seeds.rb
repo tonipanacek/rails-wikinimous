@@ -8,8 +8,8 @@
 Article.destroy_all
 
 10.times do
-Article.create(
-  title: Faker::HarryPotter.character,
-  content: Faker::HarryPotter.quote
-)
+  article = Article.create(
+    title: Faker::HarryPotter.character,
+    content: Faker::HarryPotter.quote
+    )
 end
